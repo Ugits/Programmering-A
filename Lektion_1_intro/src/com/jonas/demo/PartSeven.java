@@ -8,6 +8,7 @@ public class PartSeven {
     public static void main(String[] args) {
 
         int[] intBool = {4, 5, true, false, 7, 0};
+
         // Error: java: incompatible types: boolean cannot be converted to int
         // An array in Java cannot store more than one kind of data type.
 

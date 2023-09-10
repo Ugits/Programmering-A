@@ -25,7 +25,6 @@ public class Main {
 
     }
 }
-
 /*PSVM
 * Public - accessability
 * Static - se dokument
