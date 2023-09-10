@@ -26,10 +26,9 @@ public class Main {
      *  */
 
 
-
 // int[][] number = {{},{}};  // <-- multidimentionell array
 
-    public static int addition(int x, int y){
-        return x+y;
+    public static int addition(int x, int y) {
+        return x + y;
     }
 }
