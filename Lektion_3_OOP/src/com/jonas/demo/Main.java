@@ -1,7 +1,7 @@
 package com.jonas.demo;
 
 import com.jonas.demo.models.Student;
-
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Main {
@@ -9,22 +9,24 @@ public class Main {
     public static void main(String[] args) {
 
         Student studentEx = new Student("Jonas", 35);
-        System.out.println(studentEx.name + studentEx.age);
+        System.out.println(studentEx.name + " " +studentEx.age);
 
 
-
+        // PART 6
         Random ageInput = new Random();
         String[] names = {"Kalle ", "Fredrik ", "Bob ", "Stina ", "Åsa "};
-
+        ArrayList<Object> studentList = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
-            Student student = new Student(names[i], ageInput.nextInt(15,65));
-            System.out.println(student.name + student.age + "<-- Part 6");
+            Student student = new Student(names[i], ageInput.nextInt(15, 65));
+            studentList.add(student);
+            System.out.println(studentList.subList(i, i+1) + "    <-- Part 6");
         }
 
-        System.out.println(Student.doubleMyAge(studentEx.age)+"<-- Part 7");
+        // PART 7
+        System.out.println(Student.doubleMyAge(studentEx.age) + "   <-- Part 7");
 
+        // PART 8 + Se 'class Student'
         Student benny = new Student("Benny", 15);
-
         System.out.println(benny);
     }
 }
