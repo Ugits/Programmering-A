@@ -1,5 +1,7 @@
 package com.jonas.oop;
 
+import com.jonas.oop.model.Student;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -9,12 +11,16 @@ public class Main {
 
         System.out.println(addition(15,15));
         */
-        //Instanciate object
-        Student benny = new Student();
-        benny.name = "Benny";
-        benny.age = 15;
+        //Instantiate object
+        Student benny = new Student("Benny", 15, true);
+        Student frida = new Student("Frida", 22, false);
 
-        System.out.println(benny.name + " " + benny.age);
+        System.out.println(benny.name);
+        System.out.println(benny.age);
+        System.out.println(benny.isTired);
+        System.out.println(frida.name);
+        System.out.println(frida.age);
+        System.out.println(frida.isTired);
     }
 
     /* TODO Creating a Method
@@ -28,3 +34,4 @@ public class Main {
         return x+y;
     }
 }
+
