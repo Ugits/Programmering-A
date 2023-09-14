@@ -1,4 +1,4 @@
-package com.jonas.oop.model;
+package com.jonas.lektion3.model;
 
 public class Student {
 

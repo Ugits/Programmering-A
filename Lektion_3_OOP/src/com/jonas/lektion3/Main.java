@@ -1,6 +1,6 @@
-package com.jonas.oop;
+package com.jonas.lektion3;
 
-import com.jonas.oop.model.Student;
+import com.jonas.lektion3.model.Student;
 
 public class Main {
 
