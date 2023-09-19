@@ -8,7 +8,7 @@ public class Main {
         //Objects
         Test test = new Test();
         Student benny = new Student();
-
+        Scanner sc = new Scanner(System.in);
         test.scannerTwo();
         // Game
         do {
