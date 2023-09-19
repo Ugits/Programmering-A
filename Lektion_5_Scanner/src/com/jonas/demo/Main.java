@@ -14,10 +14,24 @@ public class Main {
         scan.playerName();
 
         // uppgift 2
+        int x = scan.number();
+        iterateNum(x);
 
-      
+        // uppgift 3
 
 
+        //uppgift 6
+        System.out.println(scan.number());
+
+
+
+
+    }
+
+    public static void iterateNum(int num){
+        for (int i = 1; i <= num; i++) {
+            System.out.println(i);
+        }
     }
 
 }
