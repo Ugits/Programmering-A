@@ -13,7 +13,6 @@ public class Main {
             for (int i = 0; i < result; i++) {
                 System.out.println(i);
                 System.out.println("LOOPING...");
-
             }
 
         } while (isPlaying);
