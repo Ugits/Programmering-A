@@ -18,7 +18,9 @@ public class Main {
         iterateNum(x);
 
         // uppgift 3
+        infinityDoWhile();
 
+        
 
         //uppgift 6
         System.out.println(scan.number());
@@ -32,6 +34,15 @@ public class Main {
         for (int i = 1; i <= num; i++) {
             System.out.println(i);
         }
+    }
+
+    public static void infinityDoWhile() {
+        UserInput sc = new UserInput();
+        do{
+
+            sc.playerName();
+
+        }while (true);
     }
 
 }
