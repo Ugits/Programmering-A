@@ -1,5 +1,6 @@
 package com.jonas.demo;
 
+import java.util.Objects;
 import java.util.Scanner;
 public class Main {
 
@@ -17,10 +18,13 @@ public class Main {
         int x = scan.number();
         iterateNum(x);
 
-        // uppgift 3
+        // uppgift 3 & uppgift 4
         infinityDoWhile();
 
-        
+
+
+
+
 
         //uppgift 6
         System.out.println(scan.number());
@@ -38,11 +42,14 @@ public class Main {
 
     public static void infinityDoWhile() {
         UserInput sc = new UserInput();
+        boolean itsOnLikeDonkeyKong = true;
         do{
 
-            sc.playerName();
-
-        }while (true);
+            String name = sc.playerName();
+            if (Objects.equals(name, "stop")){
+                itsOnLikeDonkeyKong = false;
+            }
+        }while (itsOnLikeDonkeyKong);
     }
 
 }

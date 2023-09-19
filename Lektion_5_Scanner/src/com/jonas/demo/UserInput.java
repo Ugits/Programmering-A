@@ -5,14 +5,15 @@ import java.util.Scanner;
 public class UserInput {
     Scanner sc = new Scanner(System.in);
     char p = 'A';
+    String name;
 
-
-    public void playerName(){
+    public String playerName(){
 
         System.out.println("Enter your name");
-        System.out.println("Player " + p + ": " + sc.nextLine());
+        name = sc.nextLine();
+        System.out.println("Player " + p + ": " + name);
         p++;
-        System.out.println(p);
+        return name;
     }
 
     public int number(){
