@@ -2,6 +2,7 @@ package com.jonas.demo;
 
 import java.util.Objects;
 import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -18,23 +19,17 @@ public class Main {
         int x = scan.number();
         iterateNum(x);
 
-        // uppgift 3 & uppgift 4
+        // uppgift 3,4,5
         infinityDoWhile();
-
-
-
-
 
 
         //uppgift 6
         System.out.println(scan.number());
 
 
-
-
     }
 
-    public static void iterateNum(int num){
+    public static void iterateNum(int num) {
         for (int i = 1; i <= num; i++) {
             System.out.println(i);
         }
@@ -43,13 +38,22 @@ public class Main {
     public static void infinityDoWhile() {
         UserInput sc = new UserInput();
         boolean itsOnLikeDonkeyKong = true;
-        do{
+        do {
 
             String name = sc.playerName();
-            if (Objects.equals(name, "stop")){
-                itsOnLikeDonkeyKong = false;
+            switch (name) {
+                case "Stop":
+                    itsOnLikeDonkeyKong = false;
+                    break;
+                case "1":
+                    System.out.println("Throwing!");
+                    break;
+                default:
+                    System.out.println("Wrong Input!");
+                    break;
             }
-        }while (itsOnLikeDonkeyKong);
+
+        } while (itsOnLikeDonkeyKong);
     }
 
 }
