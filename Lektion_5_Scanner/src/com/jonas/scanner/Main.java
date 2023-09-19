@@ -2,13 +2,14 @@ package com.jonas.scanner;
 
 import java.util.Objects;
 import java.util.Scanner;
-
+import com.jonas.scanner.Test;
 public class Main {
     public static void main(String[] args) {
         //Objects
-        Scanner sc = new Scanner(System.in);
+        Test test = new Test();
         Student benny = new Student();
 
+        test.scannerTwo();
         // Game
         do {
 
@@ -19,8 +20,10 @@ public class Main {
 
             System.out.println("You picked: " + result);
             System.out.println("Bennys age is: " + benny.age);
-            
+
         } while (true);
+
+
 
     }
 }
