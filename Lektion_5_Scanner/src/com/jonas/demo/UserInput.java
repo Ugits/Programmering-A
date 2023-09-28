@@ -18,11 +18,11 @@ public class UserInput {
 
     public int number(){
         System.out.println("Enter a number");
+
         while (!sc.hasNextInt()) {
-            System.out.println("thats not a number, try again");
+            System.out.println("That´s not a number. Try again!");
             sc.next();
         }
-
         return sc.nextInt();
     }
 
